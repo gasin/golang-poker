@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>ポーカー</title>
+    </head>
+    <body>
+            <font size="2">アカウント名:  プレイ数　ハイカード　ワンペア　ツーペア　3カード　ストレート　フラッシュ　フルハウス　4カード ストレートフラッシュ <BR> </font>
+            <script>
+                var s = {{.data}};
+                console.log(s);
+                const replaced = s.replace(/閾/g, '<BR>')
+                console.log(replaced)
+                document.write(replaced);
+            </script>
+        <a href="http://153.120.93.222:3000/">トップ</a>
+    </body>
+</html>
